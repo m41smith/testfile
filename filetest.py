@@ -1,8 +1,11 @@
 
+import random
+
 def main():
     file = open("silly.txt", "r")
     all_of_file = file.readlines()
-    print(all_of_file)
+    for line in all_of_file:
+        print(line)
 
 def reverser():
     rev_file = open("Reversable.txt", "r")
@@ -10,5 +13,5 @@ def reverser():
     to_insert = all_lines[0]
     print(f"welcome to {to_insert}, fantastic student")
 
-reverser()
-#main()
+#reverser()
+main()
