@@ -20,6 +20,7 @@ def string_formating_demo():
     formatted_number = "{:5.3f}".format(result)
     print(f"the result is {formatted_number}")
 
+
 #reverser()
 #main()
-string_formating_demo()
+#string_formating_demo()
