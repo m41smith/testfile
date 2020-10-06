@@ -4,8 +4,8 @@ import random
 def main():
     file = open("silly.txt", "r")
     all_of_file = file.readlines()
-    for line in all_of_file:
-        print(line)
+    random_line = random.choice(all_of_file)
+    print(random_line)
 
 def reverser():
     rev_file = open("Reversable.txt", "r")
