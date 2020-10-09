@@ -4,15 +4,23 @@ import random
 def main():
     file = open("silly.txt", "r")
     all_of_file = file.readlines()
-    random_line = random.choice(all_of_file)
-    print(random_line)
+    counter = 1
+    for line in all_of_file:
+        if counter%2 == 1:
+            print(line)
+        else:
+            pass
+        counter += 1
 
 
 def reverser():
     rev_file = open("Reversable.txt", "r")
     all_lines = rev_file.readlines()
-    to_insert = all_lines[0]
-    print(f"welcome to {to_insert}, fantastic student")
+    to_reverse = all_lines[1]
+    backwards = ""
+    for char in to_reverse:
+        backwards = f"{char}{backwards}"
+    print(f"reversing string gives you {backwards}")
 
 
 def string_formating_demo():
@@ -21,6 +29,6 @@ def string_formating_demo():
     print(f"the result is {formatted_number}")
 
 
-#reverser()
 #main()
+reverser()
 #string_formating_demo()
